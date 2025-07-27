@@ -1,72 +1,86 @@
 # Mastering the Lightning Network
 
-[![Build Status](https://travis-ci.com/lnbook/lnbook.svg?branch=develop)](https://travis-ci.com/lnbook/lnbook)
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
+STATUS: First Edition published on Dec 21, 2021
 
 <img src="images/cover_thumb.png" width=200 alt="Mastering Lightning Cover">
 
 ## About
-Mastering the Lightning Network is an O'Reilly Media book, due for publication in Q4'2021, and announced in August 2019  by authors Andreas M. Antonopoulos ([@aantonop](https://twitter.com/aantonop)), Olaoluwa Osuntokun ([@roasbeef](https://twitter.com/roasbeef)), Rene Pickhardt ([@renepickhardt](https://twitter.com/renepickhardt)).
+Mastering the Lightning Network is an O'Reilly Media book, by authors Andreas M. Antonopoulos ([@aantonop](https://twitter.com/aantonop)), Olaoluwa Osuntokun ([@roasbeef](https://twitter.com/roasbeef)), Rene Pickhardt ([@renepickhardt](https://twitter.com/renepickhardt)). It was published on Dec 21, 2021, in paperback and e-book, by O'Reilly Media. It is available everywhere that books are sold. This repository contains the manuscript of the book as published by O'Reilly Media, tagged as [firstedition_firstprint](https://github.com/lnbook/lnbook/releases/tag/firstedition_firstprint).
 
 The book describes the Lightning Network (LN), a Peer-to-Peer protocol running on top of Bitcoin and other blockchains, which provides near-instant, secure, micro-payments.
 
 The book is suitable for technical readers with an understanding of the fundamentals of Bitcoin and other open blockchains.
 
-## Status
+## Contents
 
-The current status of the book is "IN PRODUCTION": ONLY COPY-EDIT CONTRIBUTIONS ARE ACCEPTED.
+### Preface
 
-See below for status of specific chapters and read the contribution guide to learn how and where to contribute.
+*  [Cover](cover.html)
+*  [Titlepage](titlepage.html)
+*  [Copyright](copyright.html)
+*  [Table of Contents](toc.html)
+*  [Preface](preface.asciidoc)
 
-### Legend
+### Part 1
 
-* :arrows_clockwise:  LIVE EDITS - Continuously changing: Submit focused/small Issues and PRs
-* :mag: REVIEW - Ready for review: Submit Issues and PRs as needed
-* :lock_with_ink_pen: EARLY DRAFT - In progress, changing often: Submit issues only, NO PRs or fixes
-* :bookmark_tabs: OUTLINE - Rough outline - Please contribute! PRs welcome.
-* :thought_balloon: PLANNED - Planned section  - Do nothing yet.
-* :heavy_check_mark: DRAFT PUBLISHED - Published in early release - Copy edit only.
+*  [Part 1 - Intro](part_1_divider.asciidoc)
+*  [Introduction](01_introduction.asciidoc)
+*  [Getting Started](02_getting_started.asciidoc)
+*  [How the Lightning Network Works](03_how_ln_works.asciidoc)
+*  [Lightning Node Software](04_node_client.asciidoc)
+*  [Operating a Lightning Network Node](05_node_operations.asciidoc)
 
-| Section | Length (Word Count) |  Status |
-|-------|------|:------:|
-| PART 1 | PART 1 | PART 1 |
-| [Preface and Acknowledgments](preface.asciidoc) | #### | :heavy_check_mark: |
-| [Glossary](glossary.asciidoc) | ############## | :arrows_clockwise: |
-| [Introduction](01_introduction.asciidoc) | ########## | :heavy_check_mark: |
-| [Getting Started](02_getting_started.asciidoc) | ############# | :heavy_check_mark: |
-| [LN Basics (How LN Works)](03_how_ln_works.asciidoc) | ########################### | :heavy_check_mark: |
-| [Nodes (LN Clients)](04_node_client.asciidoc) | #################### | :heavy_check_mark: |
-| [Operating a Node](05_node_operations.asciidoc) | ############################ | :heavy_check_mark: |
-| PART 2 | PART 2 | PART2 |
-| [Lightning Architecture](06_lightning_architecture.asciidoc) | # | :heavy_check_mark: |
-| [Payment Channels in Detail](07_payment_channels.asciidoc) | ################### | :heavy_check_mark: |
-| [Routing (HTLCs)](08_routing_htlcs.asciidoc) | ################ | :heavy_check_mark: |
-| [Channel operation and HTLC settlement](09_channel_operation.asciidoc) | ####### | :heavy_check_mark: |
-| [Onion Construction and Routing](10_onion_routing.asciidoc) | ################ | :heavy_check_mark: |
-| [Channel Graph and Gossip Layer](11_gossip_channel_graph.asciidoc) | ############ | :heavy_check_mark: |
-| [Payment Path Finding](12_path_finding.asciidoc) | ############ | :heavy_check_mark: |
-| [LN Security and Privacy](13_security_privacy_ln.asciidoc) | ################ | :heavy_check_mark: |
-| APPENDICES | APPENDICES | APPENDICES |
-| [A1 - Bitcoin Fundamentals Review](appendix-bitcoin-fundamentals-review.asciidoc) | ########### | :heavy_check_mark: |
-| [A2 - Payment Requests (Invoices)](appendix_payment_requests.asciidoc) | #### | :heavy_check_mark: |
-| [A3 - Wire Protocol](appendix_wire_protocol.asciidoc) | ################# | :heavy_check_mark: |
-| [A4 - Encrypted Message Transport (Brontide)](appendix_encrypted_transport.asciidoc) | ########## | :heavy_check_mark: |
-| [A5 - License Notices](appendix_license_notices.asciidoc) | # | :heavy_check_mark: |
+### Part 2
 
+*  [Part 2 - Intro](part_2_divider.asciidoc)
+*  [Lightning Network Architecture](06_lightning_architecture.asciidoc)
+*  [Payment Channels](07_payment_channels.asciidoc)
+*  [Routing on a Network of Payment Channels](08_routing_htlcs.asciidoc)
+*  [Channel Operation and Payment Forwarding](09_channel_operation.asciidoc)
+*  [Onion Routing](10_onion_routing.asciidoc)
+*  [Gossip and the Channel Graph](11_gossip_channel_graph.asciidoc)
+*  [Pathfinding and Payment Delivery](12_path_finding.asciidoc)
+*  [Wire Protocol: Framing and Extensibility](13_wire_protocol.asciidoc)
+*  [Lightning's Encrypted Message Transport](14_encrypted_transport.asciidoc)
+*  [Lightning Payment Requests](15_payment_requests.asciidoc)
+*  [Security and Privacy of the Lightning Network](16_security_privacy_ln.asciidoc)
+*  [Conclusion](17_conclusion.asciidoc)
 
-Total Word Count: 125288
+### Appendices
 
-Target Word Count: 100,000-120,000
+*  [Bitcoin Fundamentals Review](appendix_bitcoin_fundamentals_review.asciidoc)
+*  [Docker Basics](appendix_docker_basics.asciidoc)
+*  [Protocol Messages](appendix_protocol_messages.asciidoc)
 
-## Contributing
+### Glossary
 
-The authors welcome contributions to this book! Read the [Guide to Contributing](CONTRIBUTING.md)
+*  [Glossary](glossary.asciidoc)
 
-## Source and license
+### Author Bios and Colophon
 
-Mastering the Lightning Network is released under the Creative Commons CC-BY-NC-ND license, which allows sharing the source code for personal use only. You may read this book for free. You may not create derivatives (such as PDF copies), or distribute the book commercially. The full terms of the license can be found here:
+*  [Author Bios](author_bio.html)
+*  [Colophon](colo.html)
 
-[![Creative Commons License](https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+## Creative Commons Attribution Sharealike License
 
-<span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">Mastering the Lightning Network</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="https://lnbook.info/" property="cc:attributionName" rel="cc:attributionURL">Andreas M. Antonopoulos, Olaoluwa Osuntokun, Rene Pickhardt</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License</a>.
+Mastering the Lightning Network is released under the Creative Commons CC-BY-SA 4.0 license. The full terms of the license can be found here:
 
-It is expected that the book will be released under a more permissive CC-BY-SA license within a year of publication.
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Mastering the Lightning Network</span> by <span xmlns:cc="http://creativecommons.org/ns#" property="cc:attributionName">Andreas M. Antonopoulos, Olaoluwa Osuntokun, Rene Pickhardt</span> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.<br />Based on a work at <a xmlns:dct="http://purl.org/dc/terms/" href="https://github.com/lnbook/lnbook" rel="dct:source">https://github.com/lnbook/lnbook</a>.
+
+This "Free Culture" compliant license was approved by our publisher O'Reilly Media (http://oreilly.com), who understands the value of open source. O'Reilly Media is not just the world's best publisher of technical books, but is also a strong supporter of this open culture and the sharing of knowledge.
+
+Thank you O'Reilly Media!
+
+## Translations and Derivatives (eg. PDF, HTML, EPUB ebooks)
+
+The current license permits derivative work, such as independent translations and the production and circulation of PDF, HTML or other derivative renderings of the source ASCIIDOC. *The license does not extend to O'Reilly Media intellectual property, such as the cover page.*
+
+If you are interested in translating this book please see [TRANSLATING.md](TRANSLATING.md)
+
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
